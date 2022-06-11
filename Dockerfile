@@ -5,7 +5,7 @@ CMD [""]
 ENTRYPOINT ["/app/deploy.sh"]
 RUN mkdir -p /usr/share/man/man1 \
     && apt update \
-    && apt install -y --no-install-recommends sudo curl git ssh make openjdk-11-jre openjdk-11-jre-headless ca-certificates-java imagemagick zip \
+    && apt install -y --no-install-recommends sudo curl git ssh make openjdk-11-jre openjdk-11-jre-headless ca-certificates-java imagemagick zip golang \
     && rm -rf /var/lib/apt/lists/* \
     && curl -L -o /usr/bin/firebase https://firebase.tools/bin/linux/latest \
     && chmod +x /usr/bin/firebase

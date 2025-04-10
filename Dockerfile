@@ -1,4 +1,4 @@
-FROM python:3.8.6-slim
+FROM python:3.13.2-slim
 MAINTAINER Amane Katagiri
 WORKDIR /data
 CMD [""]
